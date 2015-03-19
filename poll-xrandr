@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Help
-if [ -z $1 ] || [ $1 == "--help" ] || [ $1 == "-h" ] || [[ $1 == -* ]]; then
+if [ -n "$1" ] && [[ $1 == "--help" ||  $1 == "-h" ]]; then
 	case $1 in
 		-h|--help)
 				echo "Usage:
@@ -22,7 +22,6 @@ Application Options:
 	exit
 fi
 
-command=$1
 i=4 # default interval for polling.
 
 connected="$(xrandr -q | grep " connected"|cut -d ' ' -f1|xargs)"
@@ -37,7 +36,7 @@ while : ; do
 	if [ "$connected" != "$connected_recheck" ]; then
 		# Set the original contents the same as new to avoid unnecessarily repeating
 		connected=$connected_recheck
-		$command
+		autorandr --change
 	fi
 
 	shift 1
