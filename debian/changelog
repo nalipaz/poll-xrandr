@@ -1,3 +1,10 @@
+poll-xrandr (1.2) releaased; urgency=medium
+
+  * Change to only using autorandr --change command.
+  * Custom commands can now go in ~/.autorandr/ as per autorandr docs.
+
+ -- Nicholas Alipaz <nicholas@alipaz-y40.dev>  Thu, 19 Mar 2015 16:20:04 -0700
+
 poll-xrandr (1.1) releaased; urgency=medium
 
   *  Adds help text to command line options/output.
