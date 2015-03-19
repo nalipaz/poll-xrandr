@@ -1,26 +1,24 @@
 #!/bin/bash
 
-# Take in argument for the path to monitor, usually a status file under /sys
-f=$1
-command=$2
+command=$1
 i=4 # default interval for polling.
 
-# Store the original status for comparisons
-cat="`cat $f`"
+connected="$(xrandr -q | grep " connected"|cut -d ' ' -f1|xargs)"
 
 # Endless loop
 while : ; do
 	# Re-read the status
-	new_cat="`cat $f`"
+	#new_cat="`cat $f`"
+	connected_recheck="$(xrandr -q | grep " connected"|cut -d ' ' -f1|xargs)"
 
 	# If original contents don't match new we need to run command.
-	if [ "$cat" != "$new_cat" ]; then
+	if [ "$connected" != "$connected_recheck" ]; then
 		# Set the original contents the same as new to avoid unnecessarily repeating
-		cat=$new_cat
+		connected=$connected_recheck
 		$command
 	fi
 
-	shift 2
+	shift 1
 	while [[ $# > 0 ]]; do
 		key=$1
 
