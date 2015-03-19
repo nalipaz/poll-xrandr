@@ -1,0 +1,12 @@
+Section: misc
+Priority: optional
+Homepage: https://github.com/nalipaz/poll_xrandr
+Standards-Version: 3.9.2
+Package: poll_xrandr
+Version: 1.0
+Maintainer: Nicholas Alipaz <nicholas@alipaz.net>
+Depends: grep, coreutils
+Architecture: all
+Readme: README.md
+Files: poll_xrandr /usr/bin/poll_xrandr 
+Description: Poll xrandr for layout changes and run a command.
