@@ -1,2 +1,2 @@
-# poll_file
-Bash script to poll a file until changed, then run command upon change
+# poll_xrandr
+Bash script to poll a xrandr until connected screens change, then run command upon change
