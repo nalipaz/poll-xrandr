@@ -3,7 +3,7 @@ Priority: optional
 Homepage: https://github.com/nalipaz/poll-xrandr
 Standards-Version: 3.9.2
 Package: poll-xrandr
-Version: 1.0
+Version: 1.1
 Maintainer: Nicholas Alipaz <nicholas@alipaz.net>
 Depends: grep, coreutils
 Architecture: all
@@ -11,4 +11,3 @@ Changelog: debian/changelog
 Readme: README.md
 Files: poll-xrandr /usr/bin/ 
 Description: Poll xrandr for layout changes and run a command
- Usage is very simple and room for improvement.

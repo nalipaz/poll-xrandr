@@ -1,3 +1,9 @@
+poll-xrandr (1.1) releaased; urgency=medium
+
+  *  Adds help text to command line options/output.
+
+ -- Nicholas Alipaz <nicholas@alipaz.net>  Thu, 19 Mar 2015 15:23:05 -0700
+
 poll-xrandr (1.0) releaased; urgency=medium
 
   * Initial release.

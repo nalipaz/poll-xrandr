@@ -1,5 +1,27 @@
 #!/bin/bash
 
+# Help
+if [ -z $1 ] || [ $1 == "--help" ] || [ $1 == "-h" ] || [[ $1 == -* ]]; then
+	case $1 in
+		-h|--help)
+				echo "Usage:
+  poll-xrandr COMMAND [OPTIONS]
+
+Help Options:
+  -h, --help      Show this help
+
+COMMAND is required and is a command to be executed on any detected change to xrandr displays.
+
+Application Options:
+  -i, --interval     The interval for polling, defaults to 4 seconds (-i=4)
+"			;;
+		*)
+			poll-xrandr --help
+			;;
+	esac
+	exit
+fi
+
 command=$1
 i=4 # default interval for polling.
 
