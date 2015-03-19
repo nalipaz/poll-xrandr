@@ -3,7 +3,7 @@ Priority: optional
 Homepage: https://github.com/nalipaz/poll-xrandr
 Standards-Version: 3.9.2
 Package: poll-xrandr
-Version: 1.1
+Version: 1.2
 Maintainer: Nicholas Alipaz <nicholas@alipaz.net>
 Depends: grep, coreutils
 Architecture: all
