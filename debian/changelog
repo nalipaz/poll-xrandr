@@ -1,3 +1,9 @@
+poll-xrandr (1.4) stable; urgency=medium
+
+  * Remove the postint that I mistakenly added to wrong project. 
+
+ -- Nicholas Alipaz <nicholas@alipaz.net>  Fri, 20 Mar 2015 10:54:02 -0700
+
 poll-xrandr (1.3) stable; urgency=medium
 
   * Add a postinst to exec bash and reload the bash completion.

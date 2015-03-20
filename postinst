@@ -1,3 +1,0 @@
-#!/bin/bash
-## This will reload our bash completion so it works right away.
-exec bash
