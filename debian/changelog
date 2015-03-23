@@ -1,3 +1,9 @@
+poll-xrandr (1.5) stable; urgency=medium
+
+  * Check for existing processes before running again.
+
+ -- Nicholas Alipaz <nicholas@alipaz.net>  Mon, 23 Mar 2015 09:00:16 -0700
+
 poll-xrandr (1.4) stable; urgency=medium
 
   * Remove the postint that I mistakenly added to wrong project. 
