@@ -22,7 +22,7 @@ Application Options:
   exit
 fi
 
-if [ -z "$(pgrep poll-xrandr)" ]; then
+if [ -z "$(pidof -x poll-xrandr -o %PPID)" ]; then
   i=4 # default interval for polling.
 
   connected="$(xrandr -q | grep " connected"|cut -d ' ' -f1|xargs)"
